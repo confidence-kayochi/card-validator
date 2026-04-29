@@ -8,10 +8,11 @@ export const validateCard = (
   next: NextFunction,
 ) => {
   const { cardNumber } = req.body;
-  const valid = isValidCardNumber(cardNumber);
-
   if (!cardNumber)
     return next(new AppError('Card number can not be empty', 400));
+
+  const valid = isValidCardNumber(cardNumber);
+
   if (!valid) return next(new AppError('Invalid card number', 400));
 
   res.status(200).json({
