@@ -1,4 +1,3 @@
-console.log('SERVER BOOTING...');
 process.on('uncaughtException', (err) => {
   console.error('UNCAUGHT EXCEPTION... Shutting down');
 
