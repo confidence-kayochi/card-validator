@@ -1,0 +1,6 @@
+POST http://localhost:5000/api/v1/validate-card
+Content-Type: application/json
+
+{
+  "cardNumber": "4539148803436467"
+}

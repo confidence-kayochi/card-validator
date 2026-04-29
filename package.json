@@ -1,0 +1,43 @@
+{
+  "name": "card-validator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "targets": {
+    "main": "false"
+  },
+  "scripts": {
+    "dev": "nodemon --watch server.ts --exec ts-node server.ts",
+    "start": "node dist/server.js",
+    "start:prod": "NODE_ENV=production node server.js",
+    "build": "tsc",
+    "debug": "ndb server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.4.1",
+    "hpp": "^0.2.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-react": "^7.37.5",
+    "nodemon": "^3.1.14",
+    "parcel": "^2.16.4",
+    "prettier": "^3.8.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
