@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "nodemon --watch server.ts --exec \"ts-node server.ts\"",
     "start": "node dist/server.js",
-    "start:prod": "NODE_ENV=production node server.js",
+    "start:prod": "NODE_ENV=production node dist/server.js",
     "build": "tsc",
     "debug": "ndb server.js"
   },
